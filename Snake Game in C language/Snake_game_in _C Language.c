@@ -68,7 +68,7 @@ int main()
 
     Boarder();
 
-    Food();
+    Food(); //to generate food coordinates initially
 
     life=3; //number of extra lives
 
@@ -304,7 +304,7 @@ void Food()
 
             food.y+=11;
     }
-    else if(food.x==0)
+    else if(food.x==0)/*to create food for the first time coz global variable are initialized with 0*/
     {
         food.x=rand()%70;
         if(food.x<=10)
